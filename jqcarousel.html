@@ -4,9 +4,101 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <style type="text/css">
+            body,ul,li {
+                margin: 0;
+                padding: 0;
+            } 
+            #container {
+                position: relative;
+                width: 760px;
+                height: 300px;
+                margin: 50px auto;
+            }
+            .pic-list {
+                position: relative;
+                width: inherit;
+                height: inherit;
+
+            }
+            .pic-item {
+                position: absolute;
+                width: inherit;
+                height: inherit;
+            }
+            .pic-item:nth-child(1) {
+                background: url("images2/bg1.jpg");
+            }
+            .pic-item:nth-child(2) {
+                background: url("images2/bg2.jpg");
+            }
+            .pic-item:nth-child(3) {
+                background: url("images2/bg3.jpg");
+            }
+            .pic-item:nth-child(4) {
+                background: url("images2/bg4.jpg");
+            }
+            .pic-item:nth-child(5) {
+                background: url("images2/bg5.jpg");
+            }
+            .pic-item img {
+                top: 0;
+                position: absolute;
+            }
+            .buttons {
+                position: absolute;
+                width: 100px;
+                height: 14px;
+                bottom: 15px;
+                right: 15px;
+            }
+            .buttons ul li {
+                width: 14px;
+                height: 14px;
+                font-size: 10px;
+                border: 1px solid #fff;
+                display: inline-block;
+                list-style: none;
+            }
+            .buttons ul li.active {
+                background: #ffcc00;
+                border: 1px solid #ffcc00;
+            }
+        </style>
     </head>
     <body>
-    
+        <div id="container">
+            <div class="pic-list">
+                <div class="pic-item">
+                    <img src="images2/con1.png" alt="">
+                    <img src="images2/text1.png" alt="">
+                </div>
+                <div class="pic-item">
+                    <img src="images2/con2.png" alt="">
+                    <img src="images2/text2.png" alt="">
+                </div>
+                <div class="pic-item">
+                    <img src="images2/con3.png" alt="">
+                    <img src="images2/text3.png" alt="">
+                </div>
+                <div class="pic-item">
+                    <img src="images2/con4.png" alt="">
+                    <img src="images2/text4.png" alt="">
+                </div>
+                <div class="pic-item">
+                    <img src="images2/con5.png" alt="">
+                    <img src="images2/text5.png" alt="">
+                </div>
+                
+            </div>
+            <div class="buttons">
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
